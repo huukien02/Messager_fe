@@ -173,10 +173,10 @@ export default function Home() {
 
 
           <div className={styles.boxMessage_body}>
-            {arr.map((item) => {
+            {arr.map((item, index) => {
               return (
                 // <li>{item.ngGui}---{item.noiDung} ---- {item.date}</li>
-                <div>
+                <div key={index}>
                   {item.ngGui == username ? (
                     <div className={styles.me}>
                       <p>{item.date}</p>
